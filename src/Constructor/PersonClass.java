@@ -1,6 +1,5 @@
 package Constructor;
 
-import ConstructorOverloading.Person;
 
 class Person{
 	String name;
