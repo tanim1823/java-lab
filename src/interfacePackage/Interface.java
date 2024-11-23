@@ -1,4 +1,6 @@
-package interference;
+package interfacePackage;
+
+
 
 interface Animal {
 	void makeSound();
@@ -33,7 +35,7 @@ class Cat implements Animal{
 	
 }
 
-public class InterferenceExample {
+public class Interface {
 	
 	public static void main(String[] args) {
 		Animal dogAnimal = new Dog();
@@ -46,3 +48,4 @@ public class InterferenceExample {
 	}
 
 }
+
