@@ -1,23 +1,27 @@
 package method;
-class Person {
-	private String name;
-	private int age;
-	public Person(String name , int age) {
-		this.name= name;
-		this.age = age;
+
+import java.util.Scanner;
+
+class Rectangle {
+	double length;
+	double width;
+	public Rectangle(double l , double w) {
+		this.length = l;
+		this.width = w;
 	}
-	static void nameOfTheClass() {
-		System.out.println("Person Class");
-	}
-	public void personInfo() {
-		System.out.println("Name : " + name);
-		System.out.println("Age  : " + age);
+	
+	public void CalculateArea() {
+		System.out.println("Area of rectangle  : " + length*width);
 	}
 }
 public class MethodExample {
 	public static void main(String[] args) {
-		Person p1 = new Person("Tanim" , 23);
-		Person.nameOfTheClass();
-		p1.personInfo();
+		Scanner myScanner = new Scanner(System.in);
+		System.out.print("Enter Length and width: ");
+		double length = myScanner.nextDouble();
+		double width = myScanner.nextDouble();
+		Rectangle r1 = new Rectangle(length , width);
+		r1.CalculateArea();
+		myScanner.close();
 	}
 }
